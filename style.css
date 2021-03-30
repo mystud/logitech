@@ -1,0 +1,1152 @@
+body {
+    font-family: Roboto;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #2F3132;
+    margin-bottom: 20px;
+}
+
+.header {
+    background: #E0E1E2;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    height: 39.16px;
+}
+
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked~.menu__btn>span {
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #FFFFFF;
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #FFFFFF;
+}
+
+#menu__toggle:checked~.menu__box {
+    visibility: visible;
+    opacity: 100%;
+}
+
+.hamburger-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    width: 30px;
+    height: 15px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #2F3132;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    /* right: -100%; */
+    opacity: 0;
+    right: 0;
+    width: 103%;
+    height: 809px;
+
+    margin: 0;
+    padding: 179px 0;
+
+    list-style: none;
+
+    background-color: #2F3132;
+    box-shadow: 10px 0px 6px rgba(0, 0, 0, .2);
+
+    transition-duration: .25s;
+
+    background-image: url(img/Logo_Logitech1.png);
+    background-repeat: no-repeat;
+    background-size: 130px 38px;
+    background-position: center 25px;
+}
+
+.menu__item {
+    display: block;
+    width: auto;
+    padding-top: 32px;
+    color: #C4C4C4;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    border-bottom: 2px solid #ffff;
+    color: #FFFFFF;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.menu__item_0:hover {
+    margin-left: Calc(50% - 75px);
+    margin-right: Calc(50% - 75px);
+}
+
+.menu__item_1:hover {
+    margin-left: Calc(50% - 100px);
+    margin-right: Calc(50% - 100px);
+}
+
+.menu__item_2:hover,
+.menu__item_5:hover {
+    margin-left: Calc(50% - 161px);
+    margin-right: Calc(50% - 161px);
+}
+
+.menu__item_3:hover {
+    margin-left: Calc(50% - 120px);
+    margin-right: Calc(50% - 120px);
+}
+
+.menu__item_4:hover {
+    margin-left: Calc(50% - 90px);
+    margin-right: Calc(50% - 90px);
+}
+
+.text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F3132;
+    margin-bottom: 0px;
+}
+
+.text_margin {
+    margin-left: 34px;
+    margin-right: 33px;
+}
+
+.text_flow {
+    margin-bottom: 22px;
+    text-align: left;
+    width: 220px;
+}
+
+.text_settings {
+    color: #fff;
+    margin-left: 5px;
+    margin-right: 11px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.top {
+    background: #E0E1E2;
+    padding-bottom: 48px;
+}
+
+.top__text-margin {
+    margin-left: 59px;
+    margin-right: 59px;
+}
+
+.top__img {
+    margin-top: 94px;
+    height: 249px;
+    background-image: url(img/MX-Master1m.png);
+    background-size: contain;
+    margin-bottom: 41px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top__arrow {
+    margin-top: 37px;
+}
+
+.top__svg {
+    width: 39.31px;
+    height: 20px;
+}
+
+.bluetooth {
+    background: #EDEDED;
+    padding-top: 42px;
+    padding-bottom: 22px;
+}
+
+.bluetooth__icon {
+    margin-bottom: 27px;
+}
+
+.bluetooth__heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #C4C4C4;
+    margin-top: 31px;
+}
+
+.bluetooth__img {
+    height: 284px;
+    background-image: url(img/High_Resolution_PNG-MXMaster3LEFTGRAPHITE1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
+
+.info {
+    padding-top: 70px;
+    padding-bottom: 63px;
+}
+
+.info__item {
+    border: 1px solid #2F3132;
+    flex-basis: 166px;
+    min-height: 94px;
+    padding-left: 17px;
+    padding-right: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__content {
+    margin-top: 30px;
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.info__heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #2F3132;
+    margin-bottom: 70px;
+}
+
+.carousel {
+    margin-bottom: 27px;
+}
+
+.arr__left,
+.arr__right {
+    height: 18.3px;
+    width: 9.15px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 0rem;
+    height: 0rem;
+}
+
+.info__carousel-indicators [data-bs-target] {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+    margin-left: 11px;
+    opacity: 1;
+}
+
+.info__carousel-indicators {
+    bottom: -124px;
+    display: flex;
+    justify-content: center;
+    margin-right: Calc(50% - 180px);
+    margin-left: Calc(50% - 180px);
+}
+
+.arr__left,
+.arr__right {
+    height: 24px;
+    width: 12px;
+    display: block;
+    right: 25px;
+}
+
+.info__top-text {
+    width: 247px;
+    margin: auto;
+}
+
+.info__item-heading {
+    margin-bottom: 5px;
+}
+
+.settings {
+    padding-top: 70px;
+    background: #EDEDED;
+}
+
+.flow {
+    padding-top: 64px;
+    padding-bottom: 200px;
+    background-image: url(img/High_Resolution_JPG-MXLifestyle23461.png);
+    background-color: #EDEDED;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    list-style-position: inside;
+    background-size: contain;
+}
+
+.flow__ol {
+    margin-top: 20px;
+    padding-left: 54px;
+    bottom: -30px;
+}
+
+.settings__carousel-indicators {
+    bottom: -32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.settings__carousel-indicators [data-bs-target] {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+}
+
+.settings__slider {
+    margin: 35px 22px 43px 23px;
+}
+
+.settins__slider-img-x,
+.settins__slider-img-xl,
+.info__slider-xl {
+    display: none;
+}
+
+.settings__content {
+    background: #c4c4c4;
+    padding: 22px 22px 26px 29px;
+}
+
+.settings__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.mouse__text {
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.mouse__img {
+    height: 310px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mouse__img_1 {
+    background-image: url(img/image1_1.jpg);
+}
+
+.mouse__img_2 {
+    background-image: url(img/image2_1.jpg);
+}
+
+.footer {
+    background: #2F3132;
+    height: 75px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 7px;
+    line-height: 8px;
+    color: #C7C8C8;
+    padding-top: 22px;
+}
+
+@media(min-width:768px) {
+    .menu__btn {
+        top: 54px;
+        right: 58px;
+
+        width: 61px;
+        height: 32px;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        height: 8px;
+    }
+
+    .menu__btn>span::before {
+        top: -16px;
+    }
+
+    .menu__btn>span::after {
+        top: 16px;
+    }
+
+    .menu__item {
+        display: block;
+        padding-top: 59px;
+        color: #C4C4C4;
+
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 47px;
+
+        text-decoration: none;
+    }
+
+    .menu__box {
+        background-size: 240px 72px;
+        padding-top: 200px;
+        height: 1165px;
+        width: 101%;
+        background-position: center 55px;
+    }
+
+    .menu__item_0:hover {
+        margin-left: Calc(50% - 150px);
+        margin-right: Calc(50% - 150px);
+    }
+
+    .menu__item_1:hover {
+        margin-left: Calc(50% - 202px);
+        margin-right: Calc(50% - 202px);
+    }
+
+    .menu__item_2:hover,
+    .menu__item_5:hover {
+        margin-left: Calc(50% - 315px);
+        margin-right: Calc(50% - 315px);
+    }
+
+    .menu__item_3:hover {
+        margin-left: Calc(50% - 235px);
+        margin-right: Calc(50% - 235px);
+    }
+
+    .menu__item_4:hover {
+        margin-left: Calc(50% - 180px);
+        margin-right: Calc(50% - 180px);
+    }
+
+    .info__carousel-indicators {
+        bottom: -140px;
+        display: flex;
+        justify-content: center;
+        margin-right: Calc(50% - 230px);
+        margin-left: Calc(50% - 230px);
+    }
+
+    .info__carousel-indicators [data-bs-target] {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .header {
+        height: 126px;
+    }
+
+    .header__logo {
+        height: 72.3px;
+        margin-top: 28px;
+    }
+
+    .heading {
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 30px;
+    }
+
+    .text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text_margin {
+        margin-left: 77px;
+        margin-right: 77px;
+    }
+
+    .top__text-margin {
+        margin-left: 159px;
+        margin-right: 159px;
+    }
+
+    .top__arrow {
+        margin-top: 76px;
+    }
+
+    .top {
+        padding-bottom: 80px;
+    }
+
+    .top__img {
+        background-image: url(img/MX-Master1s.png);
+        margin-top: 159px;
+        height: 514px;
+        margin-bottom: 124px;
+    }
+
+    .top__svg {
+        width: 57px;
+        height: 29px;
+    }
+
+    .bluetooth {
+        padding-top: 80px;
+        padding-bottom: 3px;
+    }
+
+    .bluetooth__heading {
+        font-size: 150px;
+        line-height: 176px;
+        margin-top: 76px;
+    }
+
+    .bluetooth__icon {
+        margin-bottom: 39px;
+    }
+
+    .bluetooth__img {
+        background-image: url(img/High_Resolution_PNG-MXMaster3LEFTGRAPHITE1.png);
+        height: 597px;
+        margin-left: 39px;
+        margin-right: 19px;
+    }
+
+    .info__top-text {
+        width: 740px;
+        margin: auto;
+    }
+
+    .info__content {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+
+    .info__item-heading {
+        margin-bottom: 5px;
+    }
+
+    .info__item {
+        min-height: 170px;
+    }
+
+    .info__heading {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 82px;
+        margin-top: 50px;
+    }
+
+    .info__carousel-indicators {
+        bottom: -168px;
+    }
+
+    .arr__left,
+    .arr__right {
+        height: 24px;
+        width: 12px;
+    }
+
+    .flow {
+        padding-bottom: 498px;
+        padding-left: 64px;
+        padding-right: 65px;
+        background-image: url(img/High_Resolution_JPG-MXLifestyle23461x.png);
+    }
+
+    .text_flow-p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flow__ol {
+        display: flex;
+        padding-left: 0;
+    }
+
+    .settings__carousel-indicators [data-bs-target] {
+        width: 25px;
+        height: 25px;
+    }
+
+    .text_flow {
+        width: auto;
+        padding: 8px 21px 4px 28px;
+        border-left: 1px solid #494949;
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .text_flow:first-child {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .text_flow:last-child {
+        padding-right: 0;
+    }
+
+    .settings {
+        padding-bottom: 70px;
+    }
+
+    .settings__slider {
+        margin: 50px 200px 100px;
+    }
+
+    .settings__content {
+        margin-left: 64px;
+        margin-right: 65px;
+    }
+
+    .settings__icons {
+        margin-left: 98px;
+        margin-right: 104px;
+    }
+
+    .settings__img {
+        height: 35px;
+    }
+
+    .heading_settings {
+        margin-left: 64px;
+        margin-right: 65px;
+    }
+
+    .text_settings-p {
+        margin-left: 64px;
+        margin-right: 65px;
+    }
+
+    .text_settings {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .text_mouse {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mouse__text {
+        padding-left: 67px;
+        padding-right: 64px;
+        padding-bottom: 50px;
+    }
+
+    .mouse__img {
+        height: 549px;
+    }
+
+    .mouse__img_1 {
+        background-image: url(img/image1_b.jpg);
+    }
+
+    .mouse__img_2 {
+        background-image: url(img/image2_b.jpg);
+    }
+
+    .footer {
+        font-size: 14px;
+        line-height: 16px;
+        height: 150px;
+        padding-top: 47px;
+    }
+}
+
+@media(min-width:1024px) {
+    .center {
+        padding-left: calc(50% - 450px);
+        padding-right: calc(50% - 450px);
+    }
+
+    .heading {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .text {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .header__logo_dark {
+        display: none;
+    }
+
+    .menu__btn {
+        display: none;
+    }
+
+
+    .hamburger-menu {
+        margin-top: 0;
+    }
+
+    .header {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+    }
+
+    .menu__box {
+        display: flex;
+        position: absolute;
+        visibility: visible;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        opacity: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100px;
+        width: 100%;
+        background-image: url(img/Logo_Logitech1xl.png);
+        background-repeat: no-repeat;
+        background-size: 150px 44px;
+        background-position: calc(50% - 500px);
+        list-style: none;
+        padding-left: calc(50% - 300px);
+        padding-right: calc(50% - 578px);
+    }
+
+
+    .menu__item {
+        width: auto;
+        height: 30px;
+        display: flex;
+        color: #C4C4C4;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: none;
+        padding-top: 8px;
+        text-transform: uppercase;
+    }
+
+    .menu__item:hover {
+        border-bottom: 1px solid #ffff;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .menu__item_0 span,
+    .menu__item_1 span,
+    .menu__item_2 span,
+    .menu__item_3 span,
+    .menu__item_4 span,
+    .menu__item_5 span {
+        display: none;
+    }
+
+    .menu__item_0:after {
+        content: 'РАБОТАЙТЕ БЕЗ ПРОВОДОВ';
+    }
+
+    .menu__item_1:after {
+        content: 'ГДЕ УГОДНО';
+    }
+
+    .menu__item_2:after {
+        content: 'С КОМФОРТОМ';
+    }
+
+    .menu__item_3:after {
+        content: 'С РАЗНЫХ УСТРОЙСТВ';
+    }
+
+    .menu__item_4:after {
+        content: 'В ЛЮБОЕ ВРЕМЯ';
+    }
+
+    .menu__item_5:after {
+        content: 'И ЕЩЕ БЫСТРЕЕ';
+    }
+
+    .nav-item {
+        padding-left: 21px;
+        padding-right: 21px;
+        border-right: 1px solid #494949;
+    }
+
+    .nav-item:first-child {
+        padding-left: 0;
+    }
+
+    .nav-item:last-child {
+        padding-right: 0;
+        border: none;
+    }
+
+    .top {
+        padding-bottom: 56px;
+    }
+
+    .top__img {
+        background-image: url(img/MX-Master1.png);
+        margin-top: 0px;
+        height: 671px;
+        padding-top: 80px;
+        margin-bottom: 8px;
+    }
+
+    .top__arrow {
+        margin-top: 49px;
+    }
+
+    .bluetooth {
+        padding-bottom: 70px;
+        padding-top: 44px;
+    }
+
+    .bluetooth__icon {
+        margin-bottom: 35px;
+    }
+
+    .bluetooth__img {
+        height: 427px;
+        background: url(img/High_Resolution_PNG-MXMaster3FRONTGRAPHITE1.png) no-repeat 0 119px,
+            url(img/High_Resolution_PNG-MXMaster3LEFTGRAPHITE2.png) no-repeat right 119px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .center_bluetooth {
+        padding-left: calc(50% - 622px);
+        padding-right: calc(50% - 622px);
+    }
+
+    .bluetooth__heading {
+        font-size: 96px;
+        line-height: 112px;
+        display: flex;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+    .bluetooth__heading_day {
+        font-size: 300px;
+        line-height: 352px;
+        padding-left: 80px;
+    }
+
+    .bluetooth__heading_day-mini {
+        padding-top: 45px;
+    }
+
+    .info {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .info__text {
+        width: 765px;
+        margin: auto;
+    }
+
+    .info__item {
+        min-height: 140px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .info__item-heading {
+        margin-bottom: 5px;
+    }
+
+    .info__slider-content1 {
+        content: url(img/wood-xl.png);
+    }
+
+    .info__slider-content2 {
+        content: url(img/glass-xl.png);
+    }
+
+    .info__slider-content3 {
+        content: url(img/linoleum-xl.png);
+    }
+
+    .info__slider-content4 {
+        content: url(img/cloth-xl.png);
+    }
+
+    .info__slider-content5 {
+        content: url(img/marble-xl.png);
+    }
+
+
+    .info__slider {
+        padding-left: calc(50% - 640px);
+        padding-right: calc(50% - 640px);
+    }
+
+    .flow {
+        padding-bottom: 659px;
+        background-image: url(img/High_Resolution_JPG-MXLifestyle23461x.png);
+    }
+
+    .flow_center {
+        padding-left: calc(50% - 479px);
+        padding-right: calc(50% - 479px);
+    }
+
+    .flow__ol {
+        margin-left: 15px;
+    }
+
+    .settings {
+        padding-bottom: 70px;
+    }
+
+    .settings__slider {
+        display: none;
+    }
+
+    .settins__slider-img-xl {
+        display: none;
+    }
+
+    .settins__slider-img-x {
+        display: flex;
+        justify-content: center;
+        margin-top: 54px;
+    }
+
+    .settings__content {
+        width: 749px;
+        margin: auto;
+        margin-top: -30px;
+    }
+
+    .text_settings-p {
+        width: 950px;
+        margin: auto;
+    }
+
+    .mouse {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mouse__text {
+        padding-top: 50px;
+    }
+
+    .mouse_center {
+        padding-left: calc(50% - 655px);
+        padding-right: calc(50% - 655px);
+    }
+
+    .mouse__item {
+        height: 557px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mouse__text_1 {
+        /* padding-right: 217px; */
+        padding-right: 170px;
+        order: 2;
+    }
+
+    .mouse__text_1 .heading {
+        text-align: left;
+    }
+
+    .mouse__text_1 .text {
+        text-align: left;
+    }
+
+    .mouse__text_2 {
+        padding-left: 217px;
+        order: 3;
+    }
+
+    .mouse__text_2 .heading {
+        text-align: right;
+    }
+
+    .mouse__text_2 .text {
+        text-align: right;
+        padding-left: 14px;
+    }
+
+    .mouse__img_1 {
+        order: 1;
+        background-image: url(img/image1x.png);
+    }
+
+    .mouse__img_2 {
+        order: 4;
+        background-image: url(img/image2x.png);
+    }
+
+}
+
+@media(min-width:1920px) {
+    .top {
+        padding-bottom: 80px;
+    }
+
+    .top__img {
+        padding-top: 100px;
+        height: 689px;
+    }
+
+    .flow {
+        padding-bottom: 870px;
+
+        background-image: url(img/High_Resolution_JPG-MXLifestyle23461xl.png);
+    }
+
+    .mouse__img_1 {
+        order: 1;
+        background-image: url(img/image1l.png);
+    }
+
+    .mouse__img_2 {
+        order: 4;
+        background-image: url(img/image2l.png);
+    }
+
+    .bluetooth {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+
+    .info {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .info__heading {
+        margin-top: 39px;
+    }
+
+    .info__carousel-indicators {
+        bottom: -150px;
+    }
+
+    .flow {
+        padding-bottom: 903px;
+    }
+
+    .settings {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .settins__slider-img-xl {
+        display: flex;
+        justify-content: center;
+        margin-top: 75px;
+        height: 697px;
+    }
+
+    .settins__slider-img-x {
+        display: none;
+    }
+
+    .mouse_center {
+        padding: 100px calc(50% - 655px);
+    }
+
+}
